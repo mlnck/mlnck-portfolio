@@ -1,7 +1,18 @@
-title: Grav
+title: Mlnck
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: Jack Melnick
+  email: 'jack@mlnck.me'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'Online Personal Brand of Jack Melnick'
+taxonomies: [category,tag]
 
+redirects:
+#  '/redirect-test': '/'                         # Redirect test goes to home page
+#  '/old/(.*)': '/new/$1'                        # Would redirect /old/my-page to /new/my-page
+
+routes:
+#  '/something/else': '/blog/sample-3'         # Alias for /blog/sample-3
+#  '/new/(.*)': '/blog/$1'                     # Regex any /new/my-page URL to /blog/my-page Route
+
+blog:
+  route: '/blog'                            # Custom value added (accessible via system.blog.route)
