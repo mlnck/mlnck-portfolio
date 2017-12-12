@@ -1,0 +1,27 @@
+name: Mlnck
+version: 0.1.0
+description: Mlnck Brand Portfolio
+icon: rebel
+author:
+  name: mlnck
+  email: jack@mlnck.me
+homepage: https://github.com/mlnck/grav-theme-mlnck
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/mlnck/grav-theme-mlnck/issues
+readme: https://github.com/mlnck/grav-theme-mlnck/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
