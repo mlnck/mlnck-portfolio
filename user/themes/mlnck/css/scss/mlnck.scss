@@ -1,0 +1,9 @@
+// import 3rd party CSS
+@import 'vendor/reset';
+@import 'vendor/normalize';
+
+// import site configuration CSS
+@import 'config/mlnck';
+
+//h1{ color: $redish }
+body *{ font-family:sans-serif; }

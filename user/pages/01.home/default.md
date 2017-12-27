@@ -33,8 +33,23 @@ content:
   - `[![Alt text](/path/to/img.jpg)](http://example.net/)`
 - Built in image [helpers](http://127.0.0.1:8080/content/media#actions)
   - And [metafile](http://127.0.0.1:8080/content/media#metafiles) overwrites
+- &nbsp;
+- [Twig Templates](http://127.0.0.1:8080/themes/theme-basics#templates)
+- [Twig Helpers](http://127.0.0.1:8080/themes/twig-filters-functions#monthize)
+- Twig has date and timezone methods (see pdf download)
+- &nbsp;
+- To use the [theme config(s)](http://127.0.0.1:8080/themes/theme-configuration)
+- [Find](http://127.0.0.1:8080/themes/theme-vars#find-url) and collection look like they may be really useful
+- &nbsp;
+- [Logging](http://127.0.0.1:8080/advanced/debugging#logging)
+&nbsp;
+&nbsp;
+
+&nbsp;
 
 ---
+---
+
 
 Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
 
