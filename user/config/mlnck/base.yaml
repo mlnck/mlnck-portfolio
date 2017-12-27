@@ -1,6 +1,13 @@
 _version: 0.0.1
 date_start: 2017.12.01
 filters:
+  - blog
+  - kickoff
+  - progress
+  - completion
+  - playground
+  - stream
+filters_colors:
   blog: FF00FF
   kickoff: 782DFF
   progress: 00FFE4

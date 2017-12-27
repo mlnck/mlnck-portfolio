@@ -42,7 +42,12 @@
                 {% include 'partials/navigation.html.twig' %}
             </nav>
             {% endblock %}
-            <h1 style="color:{{ config.themes.mlnck.color }}">{{ config.themes.mlnck.info }}</h1>
+            <h1 style="color:{{ config.mlnck.base.color }}">{{ config.mlnck.base.info }}</h1>
+            <code>
+              {% for filter in config.mlnck.base.filters %}
+                <li>{{ filter|e }}</li>
+              {% endfor %}
+            </code>
         </div>
     </div>
 {% endblock %}
