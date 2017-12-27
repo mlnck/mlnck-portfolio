@@ -1,0 +1,26 @@
+@extends:
+    '@parent'
+
+form:
+  fields:
+    anothersection:
+      type: section
+      title: Site Category Information
+      underline: true
+      fields:
+        myfield:
+          type: array
+          label: Categories
+          help: Text and Colors that will be used with the Navigation Filters
+          placeholder_key: Category Name
+          placeholder_value: Category Color
+          required: true
+          default:
+            Blog: '#FF00FF'
+            Kickoff: '#782DFF'
+            Progress: '#00FFE4'
+            Completion: '#00FF4B'
+            Playground: '#F9A64C'
+            Writing: '#FF665C'
+            Stream: '#FFE500'
+            Tags: '#A4A4A7'

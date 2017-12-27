@@ -5,9 +5,9 @@ icon: rebel
 author:
   name: mlnck
   email: jack@mlnck.me
-homepage: https://github.com/mlnck/mlnck-portfolio
-demo: http://demo.yoursite.com
-keywords: grav, theme, etc
+homepage: http://www.mlnck.me
+demo: http://www.mlnck.me
+keywords: grav, theme, mlnck
 bugs: https://github.com/mlnck/mlnck-portfolio/issues
 readme: https://github.com/mlnck/mlnck-portfolio/README.md
 license: MIT

@@ -1,18 +1,27 @@
 title: Mlnck
+default_lang: en
 author:
-  name: Jack Melnick
-  email: 'jack@mlnck.me'
+  name: 'Jack Melnick'
+  email: jack@mlnck.me
+taxonomies:
+  - category
+  - tags
+  - author
 metadata:
-    description: 'Online Personal Brand of Jack Melnick'
-taxonomies: [category,tags,author]
-
-redirects:
-#  '/redirect-test': '/'                         # Redirect test goes to home page
-#  '/old/(.*)': '/new/$1'                        # Would redirect /old/my-page to /new/my-page
-
-routes:
-#  '/something/else': '/blog/sample-3'         # Alias for /blog/sample-3
-#  '/new/(.*)': '/blog/$1'                     # Regex any /new/my-page URL to /blog/my-page Route
-
+  description: 'Online Personal Brand of Jack Melnick'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
 blog:
-  route: '/blog'                            # Custom value added (accessible via system.blog.route)
+  route: /blog
+myfield:
+  Blog: '#FF00FF'
+  Kickoff: '#782DFF'
+  Progress: '#00FFE4'
+  Completion: '#00FF4B'
+  Playground: '#F9A64C'
+  Writing: '#FF665C'
+  Stream: '#FFE500'
+  Tags: '#A4A4A7'
