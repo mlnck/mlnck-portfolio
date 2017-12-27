@@ -1,9 +1,40 @@
 ---
 title: Home
+taxonomy:
+    category:
+        - Page
+content:
+  items: @self.modular
+  order:
+    by: date
+    dir: asc
+    custom:
+      - _timeline
+      - _focused
+      #- _callout
+      #- _features
 ---
 
 # Grav is Running!
 ## You have installed **Grav** successfully
+
+---
+## Notes
+
+- [Summary](http://127.0.0.1:8080/content/content-pages#summary-size-and-separator) to be used as timeline post value
+- [Dates](http://127.0.0.1:8080/content/content-pages#finding-other-pages) to be used when constructing timeline maybe?
+- &nbsp;
+- Make sure to use [title, slug, taxonomy &amp; date](http://127.0.0.1:8080/content/headers)
+  - slug for deep linking support
+- For homepage: Include [modular](http://127.0.0.1:8080/content/headers#collection-of-modular-children) page(s)
+  - [Exactly](http://127.0.0.1:8080/content/modular#modular-pages) what we want to do:
+- &nbsp;
+- Remember you can make image links:
+  - `[![Alt text](/path/to/img.jpg)](http://example.net/)`
+- Built in image [helpers](http://127.0.0.1:8080/content/media#actions)
+  - And [metafile](http://127.0.0.1:8080/content/media#metafiles) overwrites
+
+---
 
 Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
 

@@ -4,7 +4,7 @@ author:
   email: 'jack@mlnck.me'
 metadata:
     description: 'Online Personal Brand of Jack Melnick'
-taxonomies: [category,tag]
+taxonomies: [category,tags,author]
 
 redirects:
 #  '/redirect-test': '/'                         # Redirect test goes to home page

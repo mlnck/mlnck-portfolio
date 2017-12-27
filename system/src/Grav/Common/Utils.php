@@ -179,6 +179,7 @@ abstract class Utils
         $now = new DateTime();
 
         $date_formats = [
+            'Y.m.d' => 'Y.m.d (e.g. '.$now->format('Y.m.d').')',
             'd-m-Y H:i' => 'd-m-Y H:i (e.g. '.$now->format('d-m-Y H:i').')',
             'Y-m-d H:i' => 'Y-m-d H:i (e.g. '.$now->format('Y-m-d H:i').')',
             'm/d/Y h:i a' => 'm/d/Y h:i a (e.g. '.$now->format('m/d/Y h:i a').')',

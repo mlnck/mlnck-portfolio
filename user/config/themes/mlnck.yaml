@@ -1,2 +1,12 @@
-color: red
-info: just a test!
+_version: 0.0.1
+date_start: 2017.12.01
+filters:
+  blog: FF00FF
+  kickoff: 782DFF
+  progress: 00FFE4
+  completion: 00FF4B
+  playground: F9A64C
+  stream: FFE500
+filters_unused_colors:
+  red: FF665C
+  gray: A4A4A7
