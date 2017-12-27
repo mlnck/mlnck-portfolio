@@ -1,6 +1,0 @@
----
-taxonomy:
-    category:
-        - Module
----
-

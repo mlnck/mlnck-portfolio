@@ -6,14 +6,15 @@ filters:
   - progress
   - completion
   - playground
+  - writing
   - stream
+  - tags
 filters_colors:
   blog: FF00FF
   kickoff: 782DFF
   progress: 00FFE4
   completion: 00FF4B
   playground: F9A64C
+  writing: FF665C
   stream: FFE500
-filters_unused_colors:
-  red: FF665C
-  gray: A4A4A7
+  tags: A4A4A7
