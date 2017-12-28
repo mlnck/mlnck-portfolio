@@ -10,5 +10,7 @@ content:
     by: default
     dir: asc
     custom:
+      - _categoryfilter
+      - _timeline
       - _focused
 ---

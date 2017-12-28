@@ -8,7 +8,7 @@ form:
       title: Site Category Information
       underline: true
       fields:
-        myfield:
+        categoryfilters:
           type: array
           label: Categories
           help: Text and Colors that will be used with the Navigation Filters
