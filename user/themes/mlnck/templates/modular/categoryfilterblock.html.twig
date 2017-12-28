@@ -1,1 +1,4 @@
-!Category Filters {{ dump(site) }}233
+Category Filters {{ dump(site) }}
+{% for k,v in site.categoryfilters %}
+  {{ k }}-{{ v }}
+{% endfor %}
