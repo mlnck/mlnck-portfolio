@@ -16,7 +16,7 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
-myfield:
+categoryfilters:
   Blog: '#FF00FF'
   Kickoff: '#782DFF'
   Progress: '#00FFE4'

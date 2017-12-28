@@ -30,28 +30,6 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
 
-{% block header %}
-    <div class="header">
-        <div class="wrapper padding">
-            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <i class="fa fa-rebel"></i>
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
-            <h1 style="color:{{ config.mlnck.base.color }}">{{ config.mlnck.base.info }}</h1>
-            <code>
-              {% for filter in config.mlnck.base.filters %}
-                <li>{{ filter|e }}</li>
-              {% endfor %}
-            </code>
-        </div>
-    </div>
-{% endblock %}
-
 {% block body %}
     <section id="body">
         <div class="wrapper padding">
@@ -60,12 +38,12 @@
     </section>
 {% endblock %}
 
+{% block settings %}
+    {% include 'partials/settings.html.twig' %}
+{% endblock %}
+
 {% block footer %}
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </div>
-    </div>
+    {% include 'partials/footer.html.twig' %}
 {% endblock %}
 
 {% block bottom %}

@@ -1,9 +1,10 @@
-@extends:
-    '@parent'
+extends@:
+  - parent@
+  - type: default
 
 form:
   fields:
-    anothersection:
+    categoryfiltersection:
       type: section
       title: Site Category Information
       underline: true
@@ -15,12 +16,3 @@ form:
           placeholder_key: Category Name
           placeholder_value: Category Color
           required: true
-          default:
-            Blog: '#FF00FF'
-            Kickoff: '#782DFF'
-            Progress: '#00FFE4'
-            Completion: '#00FF4B'
-            Playground: '#F9A64C'
-            Writing: '#FF665C'
-            Stream: '#FFE500'
-            Tags: '#A4A4A7'

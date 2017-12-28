@@ -85,7 +85,7 @@ cache:
     socket: false                                # Path to redis unix socket (e.g. /var/run/redis/redis.sock), false = use server and port to connect
 
 twig:
-  cache: true                                    # Set to true to enable Twig caching
+  cache: false                                    # Set to true to enable Twig caching
   debug: true                                    # Enable Twig debug
   auto_reload: true                              # Refresh cache on changes
   autoescape: false                              # Autoescape Twig vars
