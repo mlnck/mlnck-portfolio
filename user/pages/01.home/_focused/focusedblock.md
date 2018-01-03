@@ -3,7 +3,8 @@ title: Focused
 taxonomy:
     category:
         - Page
-custom_prop: custoom
+content:
+    items: '@self.children'
 ---
 
 ## HEllo World
