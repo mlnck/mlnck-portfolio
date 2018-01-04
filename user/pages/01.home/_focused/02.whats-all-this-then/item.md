@@ -4,10 +4,14 @@ taxonomy:
     category:
         - Blog
     tags:
-        - personal
         - '1096'
+        - personal
     author:
         - mlnck
 ---
 
 here he comes to save the day
+
+===
+
+with the summary too

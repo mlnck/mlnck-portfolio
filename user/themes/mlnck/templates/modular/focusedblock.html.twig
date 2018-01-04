@@ -9,6 +9,16 @@
 	<div class="blog-header">
 	{% endif %}
 		@{{ page.content }}@
+		${% include '/default.html.twig' with {'page': page.find('/_focused/whats-all-this-then')} %}$
+		zzz{{page.find('/_focused/whats-all-this-then').content}}zzz
+		{{ dump( {'blog':page, 'page':page.find('/whats-all-this-then'), 'truncate':true} ) }}
+		{{ dump(page.find('/_focused/mlnck-me')) }}
+><---
+		{{ dump(page.find('/home/_focused/mlnck-me')) }}
+		{{ page.find('/home/_focused/mlnck-me').content }}
+		•
+		{{ page.find('/home/_focused/whats-all-this-then').content }}
+><---
 	</div>
 
 	{% for child in collection %}
