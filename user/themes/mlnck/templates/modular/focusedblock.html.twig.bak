@@ -19,12 +19,8 @@
 			{{print_server()}}
 		</pre>
 		{{ focused_item() }}***
-<hr/>
-<a href="/focus/mlnck-me">Mlnck.me</a> • <a href="/focus/whats-all-this-then">WATT?</a>
-<hr/>
+<hr/><hr/>
 		focusedItm: {{focusedItm}}
-		<br/>
-		<h2>{{ page.find(focusedItm).title }}</h2>
 		<br/>
 		{{ page.find(focusedItm).content }}
 <hr/>
