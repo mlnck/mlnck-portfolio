@@ -2,6 +2,7 @@
 
 {% block content %}
 	{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
+	{% set focusedItm = page.find(focused_item()).route %}
 
 	{% if blog_image %}
 	<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
@@ -12,12 +13,24 @@
 		${% include '/default.html.twig' with {'page': page.find('/_focused/whats-all-this-then')} %}$
 		zzz{{page.find('/_focused/whats-all-this-then').content}}zzz
 		{{ dump( {'blog':page, 'page':page.find('/whats-all-this-then'), 'truncate':true} ) }}
-		{{ dump(page.find('/_focused/mlnck-me')) }}
+		{{ dump(page.find(focused_item())) }}
+		{{ dump(page) }}
+		<pre>
+			{{print_server()}}
+		</pre>
+		{{ focused_item() }}***
+<hr/><hr/>
+		focusedItm: {{focusedItm}}
+		<br/>
+		{{ page.find(focusedItm).content }}
+<hr/>
 ><---
-		{{ dump(page.find('/home/_focused/mlnck-me')) }}
 		{{ page.find('/home/_focused/mlnck-me').content }}
 		•
 		{{ page.find('/home/_focused/whats-all-this-then').content }}
+		•••
+		{{ page.find(focused_item()).route }}
+		zzz
 ><---
 	</div>
 

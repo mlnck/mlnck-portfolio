@@ -143,7 +143,8 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('isajaxrequest', [$this, 'isAjaxFunc']),
             new \Twig_SimpleFunction('exif', [$this, 'exifFunc']),
             new \Twig_SimpleFunction('media_directory', [$this, 'mediaDirFunc']),
-
+            new \Twig_SimpleFunction('print_server', [$this,'printServerFnc']),
+            new \Twig_SimpleFunction('focused_item', [$this,'focusedItemFnc']),
         ];
     }
 
@@ -1093,6 +1094,15 @@ class TwigExtension extends \Twig_Extension
     public function vardumpFunc($var)
     {
         var_dump($var);
+    }
+
+    public function printServerFnc()
+    { print_r($_SERVER); }
+    public function focusedItemFnc()
+    {
+      $rte = $_SERVER['REQUEST_URI'];
+      $rte = explode('/',$rte);
+      return ('/home/_focused/'.$rte[count($rte)-1]);
     }
 
 }

@@ -21,6 +21,7 @@ redirects:
 #  '/old/(.*)': '/new/$1'                        # Would redirect /old/my-page to /new/my-page
 
 routes:
+  /focus/(.*): '/home/'
 #  '/something/else': '/blog/sample-3'         # Alias for /blog/sample-3
 #  '/new/(.*)': '/blog/$1'                     # Regex any /new/my-page URL to /blog/my-page Route
 
