@@ -1,6 +1,7 @@
 
 {% for p in page.collection %}
-<h2>publish date: {{ p.date }}</h2>
+<h2>publish date: {{ p.date }} <--> {{p.published_at|date("F jS Y")}}</h2>
+
 {{dump(p)}}
 {% endfor %}
 
