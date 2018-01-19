@@ -16,7 +16,6 @@
     {% block stylesheets %}
         {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css/custom.css', 98) %}
         {% do assets.addCss('theme://css/mlnck.css', 97) %}
     {% endblock %}
     {{ assets.css() }}
@@ -30,21 +29,33 @@
 </head>
 <body id="mlnck" class="{{ page.header.body_classes }}">
 
-{% block body %}
-    <section id="body">
-        <div class="wrapper padding">
-        {% block content %}{% endblock %}
-        </div>
-    </section>
-{% endblock %}
 
-{% block settings %}
-    {% include 'partials/settings.html.twig' %}
-{% endblock %}
+<div class="portfolio-wrapper">
+  <div class="portfolio-content">
+    <aside class="timeline-settings">
+      tlas
+    </aside>
+    <main class="main-wrapper">
+      {% block body %}
+      <article class="article">
+        {% block content %}{% endblock %}
+      </article>
+      {% endblock %}
+    </main>
+  </div>
+  <div class="nav-spacer">nav</div>
+</div>
 
 {% block footer %}
     {% include 'partials/footer.html.twig' %}
 {% endblock %}
+
+<!-- position abs, default hidden -->
+{% block settings %}
+    {% include 'partials/settings.html.twig' %}
+{% endblock %}
+
+<!-- position abs, default hidden -->
 
 {% block bottom %}
     {{ assets.js('bottom') }}

@@ -4,5 +4,25 @@
 {% block content %}
   {% for module in page.collection() %}
     {{ module.content }}!
+    {{dump(module)}}
   {% endfor %}
+
+  {% block hrs %}
+    <hr/><hr/>
+  {% endblock %}
+
+  {% block fpo %}
+  <div class="portfolio-wrapper">
+  <div class="content-wrapper">
+    <aside>TL/Settings</aside>
+    <main>
+      <h1>TITLE</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nisi, similique ex quae dicta eaque iusto quod, quibusdam facere in perspiciatis tempora! Cupiditate aliquid omnis ipsum libero accusamus eos aspernatur!</p>
+    </main>
+  </div>
+  <div class="nav-spacer">B</div>
+</div>
+<footer>A • B</footer>
+  {% endblock %}
+
 {% endblock %}

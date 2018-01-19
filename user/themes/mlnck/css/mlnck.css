@@ -436,7 +436,25 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  font-family: sans-serif; }
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: auto 65px;
+  grid-gap: 0;
+  background-color: #2196F3;
+  padding: 10px 0;
+  grid-template-areas: "content spacer"; }
+  .portfolio-wrapper .content-wrapper {
+    background: rgba(255, 0, 0, 0.3);
+    display: flex;
+    grid-area: content; }
+    .portfolio-wrapper .content-wrapper > .portfolio-content {
+      margin: 0 auto;
+      width: 75%; }
+  .portfolio-wrapper .nav-spacer {
+    background: rgba(255, 0, 0, 0.8);
+    grid-area: spacer; }
+
+footer {
+  float: right; }
 
 /*# sourceMappingURL=mlnck.css.map */

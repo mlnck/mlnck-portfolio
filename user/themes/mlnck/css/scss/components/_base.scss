@@ -1,1 +1,28 @@
-body{ font-family:sans-serif; }
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: auto 65px;
+  grid-gap: 0;
+  background-color: #2196F3;
+  padding: 10px 0;
+  //layout
+  grid-template-areas: "content spacer";
+
+    .content-wrapper {
+      background:rgba(255,0,0,.3);
+      display: flex;
+      grid-area: content;
+
+      & > .portfolio-content
+      {
+        // flex-grow:1;
+        margin:0 auto;
+        width:75%;
+      }
+    }
+    .nav-spacer {
+      background:rgba(255,0,0,.8);
+      grid-area: spacer;
+    }
+}
+
+footer{ float:right; }
