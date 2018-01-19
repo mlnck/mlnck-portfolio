@@ -5,20 +5,12 @@
 	{% set focusedItm = page.find(focused_item()).route %}
 
 	{% if blog_image %}
-	<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
+		<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
 	{% else %}
-	<div class="blog-header">
+		<div class="blog-header">
 	{% endif %}
 		@{{ page.content }}@
-		${% include '/default.html.twig' with {'page': page.find('/_focused/whats-all-this-then')} %}$
-		zzz{{page.find('/_focused/whats-all-this-then').content}}zzz
-		{{ dump( {'blog':page, 'page':page.find('/whats-all-this-then'), 'truncate':true} ) }}
-		{{ dump(page.find(focused_item())) }}
-		{{ dump(page) }}
-		<pre>
-			{{print_server()}}
-		</pre>
-		{{ focused_item() }}***
+
 <hr/>
 <a href="/focus/mlnck-me">Mlnck.me</a> • <a href="/focus/whats-all-this-then">WATT?</a>
 <hr/>
