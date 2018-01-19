@@ -5,5 +5,5 @@
 // import site configuration CSS
 @import 'config/mlnck';
 
-//h1{ color: $redish }
-body *{ font-family:sans-serif; }
+// import rscss.io based CSS
+@import 'components/base';
