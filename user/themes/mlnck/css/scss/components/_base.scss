@@ -7,22 +7,22 @@
   //layout
   grid-template-areas: "content spacer";
 
-    .content-wrapper {
+    & > .portfolio-content {
       background:rgba(255,0,0,.3);
       display: flex;
       grid-area: content;
 
-      & > .portfolio-content
+      & > .content-wrapper
       {
-        // flex-grow:1;
+        flex-grow:1;
         margin:0 auto;
         width:75%;
       }
     }
-    .nav-spacer {
+    & > .nav-spacer {
       background:rgba(255,0,0,.8);
       grid-area: spacer;
     }
 }
 
-footer{ float:right; }
+footer{ text-align:right; }

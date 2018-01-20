@@ -443,18 +443,19 @@ template {
   background-color: #2196F3;
   padding: 10px 0;
   grid-template-areas: "content spacer"; }
-  .portfolio-wrapper .content-wrapper {
+  .portfolio-wrapper > .portfolio-content {
     background: rgba(255, 0, 0, 0.3);
     display: flex;
     grid-area: content; }
-    .portfolio-wrapper .content-wrapper > .portfolio-content {
+    .portfolio-wrapper > .portfolio-content > .content-wrapper {
+      flex-grow: 1;
       margin: 0 auto;
       width: 75%; }
-  .portfolio-wrapper .nav-spacer {
+  .portfolio-wrapper > .nav-spacer {
     background: rgba(255, 0, 0, 0.8);
     grid-area: spacer; }
 
 footer {
-  float: right; }
+  text-align: right; }
 
 /*# sourceMappingURL=mlnck.css.map */

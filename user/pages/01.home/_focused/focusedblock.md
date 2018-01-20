@@ -7,6 +7,6 @@ content:
     items: '@self.children'
 ---
 
-## HEllo World
+## Default Landing Page
 
-goodbye dolly.
+Will be replaced when you click on a link

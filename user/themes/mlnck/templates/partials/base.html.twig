@@ -32,18 +32,11 @@
 
 <div class="portfolio-wrapper">
   <div class="portfolio-content">
-    <aside class="timeline-settings">
-      tlas
-    </aside>
-    <main class="main-wrapper">
-      {% block body %}
-      <article class="article">
-        {% block content %}{% endblock %}
-      </article>
-      {% endblock %}
-    </main>
+    {% block content %}{% endblock %}
   </div>
-  <div class="nav-spacer">nav</div>
+  <div class="nav-spacer">
+    {% block collapsedNav %}{% endblock %}
+  </div>
 </div>
 
 {% block footer %}
