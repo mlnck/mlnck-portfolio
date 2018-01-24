@@ -1,3 +1,12 @@
 @media screen and (min-width: $break-mobile) {
-  //
+  .portfolio-wrapper {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto 65px;
+    grid-template-areas: "content spacer";
+
+    & > .portfolio-content {
+      display: flex;
+    }
+  }
 }

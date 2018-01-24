@@ -15,17 +15,11 @@ footer
 .settings{ display:none; }
 
 .portfolio-wrapper {
-  display: grid;
-  grid-template-columns: auto 65px;
-  grid-gap: 0;
   background-color: #2196F3;
   padding: 10px 0;
-  //layout
-  grid-template-areas: "content spacer";
 
     & > .portfolio-content {
       background:rgba(255,0,0,.3);
-      display: flex;
       grid-area: content;
 
       & > .content-wrapper
