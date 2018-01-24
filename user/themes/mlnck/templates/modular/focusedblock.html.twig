@@ -9,29 +9,10 @@
 	{% else %}
 		<div class="blog-header">
 	{% endif %}
-		@{{ page.content }}@
 
-<hr/>
-<a href="/focus/mlnck-me">Mlnck.me</a> • <a href="/focus/whats-all-this-then">WATT?</a>
-<hr/>
-		focusedItm: {{focusedItm}}
-		<br/>
-		<h2>{{ page.find(focusedItm).title }}</h2>
-		<br/>
-		{{ page.find(focusedItm).content }}
-<hr/>
-><---
-		{{ page.find('/home/_focused/mlnck-me').content }}
-		•
-		{{ page.find('/home/_focused/whats-all-this-then').content }}
-		•••
-		{{ page.find(focused_item()).route }}
-		zzz
-><---
-	</div>
-
-	{% for child in collection %}
-			{% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-		{% endfor %}
+	<h2>{{ page.find(focusedItm).title }}</h2>
+	<br/>
+	{{ page.find(focusedItm).content }}
+</div>
 
 {% endblock %}

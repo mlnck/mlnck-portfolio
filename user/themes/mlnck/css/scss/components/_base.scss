@@ -1,3 +1,19 @@
+footer
+{
+  ul
+  {
+    float:right;
+    li
+    {
+      float:left;
+      margin:10px;
+    }
+  }
+}
+
+.full-filters,
+.settings{ display:none; }
+
 .portfolio-wrapper {
   display: grid;
   grid-template-columns: auto 65px;
@@ -24,5 +40,3 @@
       grid-area: spacer;
     }
 }
-
-footer{ text-align:right; }

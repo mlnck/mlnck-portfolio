@@ -1,5 +1,27 @@
 {% extends 'partials/base.html.twig' %}
-
+{% set collection = page.collection() %}
 {% block content %}
-  {{ page.content }}
+{{dump(collection)}}
+
+    {% for module in collection %}
+    {{dump(module)}}
+      {% if module.slug == '_timeline' %}
+        <aside class="timeline-settings">
+          {{ module.content }}
+        </aside>
+      {% endif %}
+    {% endfor %}
+    <main class="content-wrapper">
+      <article class="article">
+        {{ page.content }}
+      </article>
+    </main>
+{% endblock %}
+
+{% block collapsedNav %}
+{% for module in collection %}
+  {% if module.slug == '_categoryfilter' %}
+    {{ module.content }}
+  {% endif %}
+{% endfor %}
 {% endblock %}
