@@ -14,11 +14,13 @@ footer
 .full-filters,
 .settings{ display:none; }
 
-.portfolio-wrapper {
+.portfolio-wrapper
+{
   background-color: #2196F3;
   padding: 10px 0;
 
-    & > .portfolio-content {
+    & > .portfolio-content
+    {
       background:rgba(255,0,0,.3);
       grid-area: content;
 
