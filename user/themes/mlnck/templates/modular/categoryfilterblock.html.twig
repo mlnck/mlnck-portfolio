@@ -1,9 +1,8 @@
-Category Filters {{ dump(site) }}
+<div class="category-filters">
 {% for k,v in site.categoryfilters %}
-  {{ strtolower(k) }}-{{ v }}
+  <div class="category-filter -{{ strtolower(k) }}">
+    <div class="fleck -{{ strtolower(k) }} _fleft"></div>
+    <span class="filter">{{ strtolower(k) }}</span>
+  </div>
 {% endfor %}
-
-Make this the only categoryfilter markup
-Hide the filters and put them in another div(within this file) for desktop
-hide the position abs div and show filters on mobile
-{{ dump(page.collection) }}
+</div>

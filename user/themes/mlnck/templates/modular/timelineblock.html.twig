@@ -2,7 +2,7 @@
   {% for p in page.collection %}
     {% if p.header.taxonomy.category[0] != 'Page' %}
       <a class="timeline-link -{{strtolower(p.header.taxonomy.category[0])}} _centered" href="/focus/{{p.slug}}">
-        <div class="fright"></div><span class="linkdate">{{p.published_at|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
+        <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}} _fleft"></div><span class="linkdate">{{p.published_at|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
       </a>
     {% endif %}
   {% endfor %}
