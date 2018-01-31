@@ -1,8 +1,10 @@
-<a href="/focus/mlnck-me">Mlnck.me</a> • <a href="/focus/whats-all-this-then">WATT?</a>
-{% for p in page.collection %}
-<h2>publish date: {{ p.title }} <--> {{p.published_at|date('Y.m.d')}} :: /focus/{{p.slug}}</h2>
-
-{{dump(p)}}
-{% endfor %}
-
-Timeline
+<div class="timeline-wrapper">
+  {% for p in page.collection %}
+    {% if p.header.taxonomy.category[0] != 'Page' %}
+      <a class="timeline-link -{{strtolower(p.header.taxonomy.category[0])}}" href="/focus/{{p.slug}}">
+        <span class="linkdate">{{p.published_at|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
+      </a>
+    {% endif %}
+  {{dump(p)}}
+  {% endfor %}
+</div>
