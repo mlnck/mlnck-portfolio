@@ -14,14 +14,22 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
-        {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css/mlnck.css', 97) %}
+      {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
+      {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+      {% do assets.addCss('theme://css/mlnck.css', 97) %}
     {% endblock %}
     {{ assets.css() }}
 
+    {% block cssFromSettings %}
+      <style>
+        {% for k,v in site.categoryfilters %}
+          .{ strtolower(k) }:#{ $strtolower(tj) }
+        {% endfor %}
+      </style>
+    {% endblock %}
+
     {% block javascripts %}
-        {% do assets.addJs('jquery', 100) %}
+      {% do assets.addJs('jquery', 100) %}
     {% endblock %}
     {{ assets.js() }}
 

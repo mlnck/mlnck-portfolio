@@ -5,10 +5,13 @@
 // import site configuration CSS
 @import 'config/mlnck';
 
-// import rscss.io based CSS
+// import rscss.io based CSS (media queries)
 @import 'components/base';
 @import 'components/mobile-small';
 @import 'components/small-smallmedium';
 @import 'components/smallmedium-medium';
 @import 'components/medium-large';
 @import 'components/large';
+
+// import rscss.io based CSS (elements)
+@import 'components/fleck';

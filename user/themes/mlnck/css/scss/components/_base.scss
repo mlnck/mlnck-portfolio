@@ -1,15 +1,9 @@
-footer
-{
-  ul
-  {
-    float:right;
-    li
-    {
-      float:left;
-      margin:10px;
-    }
-  }
-}
+* { box-sizing:border-box; }
+
+footer {
+  ul { float:right;
+    li { float:left; margin:10px;
+} } }
 
 .full-filters,
 .settings{ display:none; }

@@ -1,6 +1,6 @@
 Category Filters {{ dump(site) }}
 {% for k,v in site.categoryfilters %}
-  {{ k }}-{{ v }}
+  {{ strtolower(k) }}-{{ v }}
 {% endfor %}
 
 Make this the only categoryfilter markup

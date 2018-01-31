@@ -436,6 +436,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 footer ul {
   float: right; }
   footer ul li {
@@ -468,5 +471,10 @@ footer ul {
     grid-template-areas: "content spacer"; }
     .portfolio-wrapper > .portfolio-content {
       display: flex; } }
+.fleck {
+  height: 25px;
+  width: 25px;
+  border: 5px solid #222;
+  border-radius: 12.5px; }
 
 /*# sourceMappingURL=mlnck.css.map */
