@@ -436,6 +436,16 @@ template {
 [hidden] {
   display: none; }
 
+._fleft {
+  float: left; }
+
+._fright {
+  float: left; }
+
+._centered {
+  margin: 0 auto;
+  text-align: center; }
+
 * {
   box-sizing: border-box; }
 
