@@ -1,9 +1,10 @@
 .fleck
 {
-  height:$fleckDim;
-  width:$fleckDim;
   border:none;
   border-radius:$fleckDim/2;
+  display:inline-block;
+  height:$fleckDim;
+  width:$fleckDim;
 
   &.-active{ border:5px solid $black; }
 }

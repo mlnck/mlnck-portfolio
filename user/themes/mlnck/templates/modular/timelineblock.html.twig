@@ -1,14 +1,14 @@
 <div class="timeline-wrapper">
   {% for p in page.collection %}
     {% if p.header.taxonomy.category[0] != 'Page' %}
+    <a href="/focus/{{p.slug}}">
       <div class="timeline-link">
-        <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}} _fleft"></div>
-        <div class="_fright">
-          <a href="/focus/{{p.slug}}">
+        <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}}"></div>
+        <div class="link {{ (count(p.title) > 30 ? '-long' : '') }}">
             <span class="linkdate">{{p.published_at|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
-          </a>
         </div>
       </div>
+      </a>
     {% endif %}
   {% endfor %}
 </div>

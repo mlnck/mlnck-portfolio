@@ -1,0 +1,22 @@
+.full-filters,
+.settings{ display:none; }
+
+.portfolio-wrapper
+{
+  > .portfolio-content
+  {
+    grid-area: content;
+
+    > .content-wrapper
+    {
+      flex-grow:1;
+      margin:0 auto;
+      width:75%;
+    }
+  }
+  > .nav-spacer
+  {
+    background:rgba(255,0,0,.8);
+    grid-area: spacer;
+  }
+}

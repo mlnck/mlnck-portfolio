@@ -1,0 +1,32 @@
+.timeline-wrapper
+{
+  > a
+  {
+    color:$white;
+
+    &:nth-child(even) > .timeline-link{ background-color:$bg-green-light }
+
+    > .timeline-link
+    {
+      min-height:80px;
+      padding:20px 25px;
+      position:relative;
+
+      > .fleck
+      {
+        margin-top:-10px;
+        position:absolute;
+        top:50%;
+      }
+
+      > .link
+      {
+        line-height:40px;
+        padding-left:30%;
+        text-align:right;
+
+        &.-long{ line-height:20px; }
+      }
+    }
+  }
+}

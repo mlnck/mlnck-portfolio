@@ -454,6 +454,48 @@ body, html {
   background-color: #6ca0b0;
   height: 100%; }
 
+.fleck {
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  height: 20px;
+  width: 20px; }
+  .fleck.-active {
+    border: 5px solid #222; }
+
+.timeline-wrapper > a {
+  color: #efefef; }
+  .timeline-wrapper > a:nth-child(even) > .timeline-link {
+    background-color: #86bac0; }
+  .timeline-wrapper > a > .timeline-link {
+    min-height: 80px;
+    padding: 20px 25px;
+    position: relative; }
+    .timeline-wrapper > a > .timeline-link > .fleck {
+      margin-top: -10px;
+      position: absolute;
+      top: 50%; }
+    .timeline-wrapper > a > .timeline-link > .link {
+      line-height: 40px;
+      padding-left: 30%;
+      text-align: right; }
+      .timeline-wrapper > a > .timeline-link > .link.-long {
+        line-height: 20px; }
+
+.full-filters,
+.settings {
+  display: none; }
+
+.portfolio-wrapper > .portfolio-content {
+  grid-area: content; }
+  .portfolio-wrapper > .portfolio-content > .content-wrapper {
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 75%; }
+.portfolio-wrapper > .nav-spacer {
+  background: rgba(255, 0, 0, 0.8);
+  grid-area: spacer; }
+
 footer ul {
   float: right; }
   footer ul li {
@@ -461,31 +503,6 @@ footer ul {
     margin: 10px; }
     footer ul li a {
       color: #efefef; }
-
-.full-filters,
-.settings {
-  display: none; }
-
-.portfolio-wrapper {
-  padding: 10px 0; }
-  .portfolio-wrapper > .portfolio-content {
-    grid-area: content; }
-    .portfolio-wrapper > .portfolio-content > .content-wrapper {
-      flex-grow: 1;
-      margin: 0 auto;
-      width: 75%; }
-  .portfolio-wrapper > .nav-spacer {
-    background: rgba(255, 0, 0, 0.8);
-    grid-area: spacer; }
-
-.timeline-wrapper > .timeline-link {
-  min-height: 80px;
-  padding: 20px 25px; }
-  .timeline-wrapper > .timeline-link:nth-child(even) {
-    background-color: #86bac0; }
-  .timeline-wrapper > .timeline-link > ._fright {
-    text-align: right;
-    width: 60%; }
 
 @media screen and (min-width: 420px) {
   .portfolio-wrapper {
@@ -495,12 +512,5 @@ footer ul {
     grid-template-areas: "content spacer"; }
     .portfolio-wrapper > .portfolio-content {
       display: flex; } }
-.fleck {
-  height: 20px;
-  width: 20px;
-  border: none;
-  border-radius: 10px; }
-  .fleck.-active {
-    border: 5px solid #222; }
 
 /*# sourceMappingURL=mlnck.css.map */

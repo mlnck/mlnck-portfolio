@@ -10,50 +10,7 @@ body,html
   height:100%;
 }
 
-footer {
-  ul { float:right;
-    li { float:left; margin:10px;
-      a { color:$white; }
-} } }
-
-.full-filters,
-.settings{ display:none; }
-
-.portfolio-wrapper
-{
-  padding: 10px 0;
-
-    > .portfolio-content
-    {
-      grid-area: content;
-
-      > .content-wrapper
-      {
-        flex-grow:1;
-        margin:0 auto;
-        width:75%;
-      }
-    }
-    > .nav-spacer
-    {
-      background:rgba(255,0,0,.8);
-      grid-area: spacer;
-    }
-}
-
-.timeline-wrapper
-{
-  > .timeline-link
-  {
-    min-height:80px;
-    padding:20px 25px;
-
-    &:nth-child(even){ background-color:$bg-green-light }
-
-    > ._fright
-    {
-      text-align:right;
-      width:60%;
-    }
-  }
-}
+@import './fleck';
+@import './timeline';
+@import './content';
+@import './footer';

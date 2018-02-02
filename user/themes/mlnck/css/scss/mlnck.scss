@@ -6,13 +6,12 @@
 @import 'config/mlnck';
 @import 'config/helpers';
 
-// import rscss.io based CSS (media queries)
-@import 'components/base';
-@import 'components/mobile-small';
-@import 'components/small-smallmedium';
-@import 'components/smallmedium-medium';
-@import 'components/medium-large';
-@import 'components/large';
-
 // import rscss.io based CSS (elements)
-@import 'components/fleck';
+@import 'components/base';
+
+// import rscss.io based CSS (media queries)
+@import 'media/mobile-small';
+@import 'media/small-smallmedium';
+@import 'media/smallmedium-medium';
+@import 'media/medium-large';
+@import 'media/large';
