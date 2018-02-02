@@ -440,30 +440,35 @@ template {
   float: left; }
 
 ._fright {
-  float: left; }
+  float: right; }
 
 ._centered {
   margin: 0 auto;
   text-align: center; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
+
+body, html {
+  background-color: #6ca0b0;
+  height: 100%; }
 
 footer ul {
   float: right; }
   footer ul li {
     float: left;
     margin: 10px; }
+    footer ul li a {
+      color: #efefef; }
 
 .full-filters,
 .settings {
   display: none; }
 
 .portfolio-wrapper {
-  background-color: #2196F3;
   padding: 10px 0; }
   .portfolio-wrapper > .portfolio-content {
-    background: rgba(255, 0, 0, 0.3);
     grid-area: content; }
     .portfolio-wrapper > .portfolio-content > .content-wrapper {
       flex-grow: 1;
@@ -472,6 +477,15 @@ footer ul {
   .portfolio-wrapper > .nav-spacer {
     background: rgba(255, 0, 0, 0.8);
     grid-area: spacer; }
+
+.timeline-wrapper > .timeline-link {
+  min-height: 80px;
+  padding: 20px 25px; }
+  .timeline-wrapper > .timeline-link:nth-child(even) {
+    background-color: #86bac0; }
+  .timeline-wrapper > .timeline-link > ._fright {
+    text-align: right;
+    width: 60%; }
 
 @media screen and (min-width: 420px) {
   .portfolio-wrapper {
@@ -482,9 +496,11 @@ footer ul {
     .portfolio-wrapper > .portfolio-content {
       display: flex; } }
 .fleck {
-  height: 25px;
-  width: 25px;
-  border: 5px solid #222;
-  border-radius: 12.5px; }
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 10px; }
+  .fleck.-active {
+    border: 5px solid #222; }
 
 /*# sourceMappingURL=mlnck.css.map */

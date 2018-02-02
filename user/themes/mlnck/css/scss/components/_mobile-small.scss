@@ -5,7 +5,7 @@
     grid-template-columns: auto 65px;
     grid-template-areas: "content spacer";
 
-    & > .portfolio-content {
+    > .portfolio-content {
       display: flex;
     }
   }

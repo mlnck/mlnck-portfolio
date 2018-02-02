@@ -2,6 +2,8 @@
 {
   height:$fleckDim;
   width:$fleckDim;
-  border:5px solid $black;
+  border:none;
   border-radius:$fleckDim/2;
+
+  &.-active{ border:5px solid $black; }
 }

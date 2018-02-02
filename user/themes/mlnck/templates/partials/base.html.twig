@@ -23,7 +23,7 @@
     {% block cssFromSettings %}
       <style>
         {% for k,v in site.categoryfilters %}
-          .{{ strtolower(k) }},.-{{ strtolower(k) }}{ bg-color:color:{{ strtolower(v) }}; color:{{ strtolower(v) }} }
+          .{{ strtolower(k) }},.-{{ strtolower(k) }}{ background-color:{{ strtolower(v) }}; color:{{ strtolower(v) }} }
         {% endfor %}
       </style>
     {% endblock %}
