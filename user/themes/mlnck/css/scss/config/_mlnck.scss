@@ -1,3 +1,5 @@
+/*-------------------------VARIABLES--------------------------------*/
+
 // Mobile media queries variables
 $break-mobile: 420px;
 $break-small: 767px;
@@ -10,5 +12,62 @@ $black:#222;
 $bg-green:#6ca0b0;
 $bg-green-light:#86bac0;
 $white:#efefef;
-// Dimensions
-$fleckDim: 20px;
+
+// fonts
+$michroma: 'Michroma', sans-serif;
+$coustard: 'Coustard', serif;
+$podkova: 'Podkova', serif;
+$dosis: 'Dosis', sans-serif;
+
+// Measurements
+$base-font-size:16;
+$baseFontSize:$base-font-size+px;
+$base-height-size:8;
+$baseHeightSize:$base-height-size+px;
+$fleckDim: ($base-height-size*2.5);
+
+/*-----------------------END VARIABLES------------------------------*/
+
+
+/*---------------------------MIXINS---------------------------------*/
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false)
+{
+    @if $inset
+    {
+        -webkit-box-shadow:inset $top $left $blur $size $color;
+        -moz-box-shadow:inset $top $left $blur $size $color;
+        box-shadow:inset $top $left $blur $size $color;
+    }@else{
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+
+@mixin rounded($radius:5)
+{
+  $r:rems($radius);
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+/*-------------------------END MIXINS-------------------------------*/
+
+
+/*-------------------------FUNCTIONS--------------------------------*/
+@function rems($pxsize) {
+    @return ($pxsize/$base-font-size)+rem;
+}
+/*-----------------------END FUNCTIONS------------------------------*/
+
+
+/*-------------------------EXTENSIONS--------------------------------*/
+//DEVELOPMENT
+.debug{ background-color:rgba(255,0,0,.3) !important; }
+
+//FONTS
+.michroma{ font-family: $michroma; font-weight: 400; }
+.coustard{ font-family: $coustard; font-weight: 400; }
+.podkova{ font-family: $podkova; font-weight: 600; }
+.dosis{ font-family: $dosis; font-weight: 400; }
+/*-----------------------END EXTENSIONS------------------------------*/

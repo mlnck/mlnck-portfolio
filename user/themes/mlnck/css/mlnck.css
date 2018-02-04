@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Coustard|Dosis|Michroma|Podkova:600");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -436,6 +437,33 @@ template {
 [hidden] {
   display: none; }
 
+/*-------------------------VARIABLES--------------------------------*/
+/*-----------------------END VARIABLES------------------------------*/
+/*---------------------------MIXINS---------------------------------*/
+/*-------------------------END MIXINS-------------------------------*/
+/*-------------------------FUNCTIONS--------------------------------*/
+/*-----------------------END FUNCTIONS------------------------------*/
+/*-------------------------EXTENSIONS--------------------------------*/
+.debug {
+  background-color: rgba(255, 0, 0, 0.3) !important; }
+
+.michroma, a {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400; }
+
+.coustard {
+  font-family: "Coustard", serif;
+  font-weight: 400; }
+
+.podkova {
+  font-family: "Podkova", serif;
+  font-weight: 600; }
+
+.dosis {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400; }
+
+/*-----------------------END EXTENSIONS------------------------------*/
 ._fleft {
   float: left; }
 
@@ -452,7 +480,11 @@ template {
 
 body, html {
   background-color: #6ca0b0;
+  font-size: 1rem;
   height: 100%; }
+
+a {
+  font-size: 0.875rem; }
 
 .fleck {
   border: none;
@@ -480,7 +512,7 @@ body, html {
       padding-left: 30%;
       text-align: right; }
       .timeline-wrapper > a > .timeline-link > .link.-long {
-        line-height: 20px; }
+        line-height: 1.5rem; }
 
 .full-filters,
 .settings {

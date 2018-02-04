@@ -25,7 +25,7 @@
         padding-left:30%;
         text-align:right;
 
-        &.-long{ line-height:20px; }
+        &.-long{ line-height:rems(24); }
       }
     }
   }
