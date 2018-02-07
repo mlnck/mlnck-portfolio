@@ -10,7 +10,7 @@ taxonomy:
         - mlnck
 ---
 
-Over a dozen years in the industry, and I'm more passionate now than ever.
+<p class="summary">Over a dozen years in the industry, and I'm more passionate now than ever.</p>
 
 ===
 
@@ -24,7 +24,7 @@ And (in a nutshell) that is the driving force behind this rebrand. Need to see a
 >"So why aren't you showing us a site full of apps?"
 
 Good question. And the main reason is:
-\t`user.needs = money`
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`user.needs = money`
 
 Until now, anytime I had a choice between doing a project that would benefit me in the long run, and doing a project that was relatively static (as far as career growth is concerned) I would choose the static project. I needed money, the family needed money, hell, who _doesn't_ need money!? (And if you find that person please tell them to reach out to me ... I have a ***_wonderful_*** business proposition for them)!
 

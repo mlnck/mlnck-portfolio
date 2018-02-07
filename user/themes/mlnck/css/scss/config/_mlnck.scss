@@ -11,6 +11,7 @@ $break-large: 1366px;
 $black:#222;
 $bg-green:#6ca0b0;
 $bg-green-light:#86bac0;
+$purple:#f0f;
 $white:#efefef;
 
 // fonts
@@ -68,6 +69,6 @@ $fleckDim: ($base-height-size*2.5);
 //FONTS
 .michroma{ font-family: $michroma; font-weight: 400; }
 .coustard{ font-family: $coustard; font-weight: 400; }
-.podkova{ font-family: $podkova; font-weight: 600; }
+.podkova{ font-family: $podkova; font-weight: 400; }
 .dosis{ font-family: $dosis; font-weight: 400; }
 /*-----------------------END EXTENSIONS------------------------------*/

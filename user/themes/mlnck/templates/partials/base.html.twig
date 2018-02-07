@@ -23,7 +23,15 @@
     {% block cssFromSettings %}
       <style>
         {% for k,v in site.categoryfilters %}
-          .{{ strtolower(k) }},.-{{ strtolower(k) }}{ background-color:{{ strtolower(v) }}; color:{{ strtolower(v) }} }
+          .fleck.-{{ strtolower(k) }}{ background-color:{{ strtolower(v) }}; color:{{ strtolower(v) }} }
+    			.-{{strtolower(k)}} a{ color: {{v}} }
+          .-{{strtolower(k)}} code{ color: {{v}} }
+          .gradient-{{strtolower(k)}}
+          {
+    				background: -moz-linear-gradient(left, #222 0%, {{v}} 40%, {{v}} 50%, {{v}} 62%, #222 100%); /* FF3.6-15 */
+    			  background: -webkit-linear-gradient(left, #222 0%,{{v}} 40%,{{v}} 50%,{{v}} 62%,#222 100%); /* Chrome10-25,Safari5.1-6 */
+    			  background: linear-gradient(to right, #222 0%,{{v}} 40%,{{v}} 50%,{{v}} 62%,#222 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    			}
         {% endfor %}
       </style>
     {% endblock %}
@@ -37,7 +45,9 @@
 </head>
 <body id="mlnck" class="{{ page.header.body_classes }}">
 
-
+{{dump('~~ROOT::START~~')}}
+{{dump('~~ROOT::END~~')}}
+{{dump('~~ROOT::END~~')}}
 <div class="portfolio-wrapper">
   <div class="portfolio-content">
     {% block content %}{% endblock %}

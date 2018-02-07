@@ -9,9 +9,29 @@
 
     > .content-wrapper
     {
+      background-color:$black;
       flex-grow:1;
-      margin:0 auto;
-      width:75%;
+
+      > article
+      {
+        color:$white;
+        margin:0 auto;
+        padding:rems(20) 0;
+        width:75%;
+        > .blog-content
+        {
+          > p:first-child{ margin-top:0; }
+          > .summary{ height:rems(10); visibility:hidden; }
+        }
+
+        > .blog-header
+        {
+          @extend .podkova;
+          font-size:rems(22);
+
+          h2.summary{ display:block; }
+        }
+      }
     }
   }
   > .nav-spacer

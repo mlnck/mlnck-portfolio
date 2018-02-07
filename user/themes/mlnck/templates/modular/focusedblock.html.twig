@@ -1,18 +1,31 @@
 {% set collection = page.collection() %}
 
 {% block content %}
+
 	{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
-	{% set focusedItm = page.find(focused_item()).route %}
+	{% set focusedItm = page.find(focused_item()) %}
 
+	{{dump('BLOG ITEM::START')}}
+	{{dump(focusedItm)}}
+	{{dump('BLOG ITEM::END')}}
+
+	{% set focusedCategory = 'upcoming' %}
+	{% for k,v in site.categoryfilters %}
+		{% if(strtolower(focusedItm.header.taxonomy.category[0]) == strtolower(k)) %}
+		{% set focusedCategory = strtolower(k) %}
+		{% endif %}
+	{% endfor %}
 	{% if blog_image %}
-		<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
+		<div class="flush-top blog-header blog-header-image -{{focusedCategory}}" style="background-image: url({{ blog_image.url }});">
 	{% else %}
-		<div class="blog-header">
+		<div class="blog-header -{{focusedCategory}}">
 	{% endif %}
-
-	<h2>{{ page.find(focusedItm).title }}</h2>
-	<br/>
-	{{ page.find(focusedItm).content }}
+	<h1 class="_semi">{{ focusedItm.title }}</h1>
+	<h2>{{focusedItm.summary()}}</h2>
+	</div>
+	<div class="gradient gradient-{{focusedCategory}}">&nbsp;</div>
+	<div class="blog-content -{{focusedCategory}}">
+	{{ focusedItm.content() }}
 </div>
 
 {% endblock %}

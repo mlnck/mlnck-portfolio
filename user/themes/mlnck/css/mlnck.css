@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Coustard|Dosis|Michroma|Podkova:600");
+@import url("https://fonts.googleapis.com/css?family=Coustard|Dosis|Michroma|Podkova:400,600");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -447,23 +447,47 @@ template {
 .debug {
   background-color: rgba(255, 0, 0, 0.3) !important; }
 
-.michroma, a {
+.michroma, h1, h2 > p, a {
   font-family: "Michroma", sans-serif;
   font-weight: 400; }
 
-.coustard {
+.coustard, p {
   font-family: "Coustard", serif;
   font-weight: 400; }
 
-.podkova {
+.podkova, .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-header {
   font-family: "Podkova", serif;
-  font-weight: 600; }
+  font-weight: 400; }
 
 .dosis {
   font-family: "Dosis", sans-serif;
   font-weight: 400; }
 
 /*-----------------------END EXTENSIONS------------------------------*/
+h1 {
+  font-size: 1.375rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+  margin-bottom: 1rem; }
+
+h2 > p {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: right; }
+
+code {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #222;
+  padding: 0.1875rem;
+  border-radius: 0.1875rem; }
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.175rem;
+  margin: 1rem 0; }
+
 ._fleft {
   float: left; }
 
@@ -473,6 +497,9 @@ template {
 ._centered {
   margin: 0 auto;
   text-align: center; }
+
+._semi {
+  font-weight: 600 !important; }
 
 * {
   box-sizing: border-box;
@@ -494,6 +521,14 @@ a {
   width: 20px; }
   .fleck.-active {
     border: 5px solid #222; }
+
+.gradient {
+  background: #222;
+  /* Old browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$black', endColorstr='$black',GradientType=1 );
+  /* IE6-9 */
+  height: 0.0625rem;
+  width: 100%; }
 
 .timeline-wrapper > a {
   color: #efefef; }
@@ -521,9 +556,22 @@ a {
 .portfolio-wrapper > .portfolio-content {
   grid-area: content; }
   .portfolio-wrapper > .portfolio-content > .content-wrapper {
-    flex-grow: 1;
-    margin: 0 auto;
-    width: 75%; }
+    background-color: #222;
+    flex-grow: 1; }
+    .portfolio-wrapper > .portfolio-content > .content-wrapper > article {
+      color: #efefef;
+      margin: 0 auto;
+      padding: 1.25rem 0;
+      width: 75%; }
+      .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-content > p:first-child {
+        margin-top: 0; }
+      .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-content > .summary {
+        height: 0.625rem;
+        visibility: hidden; }
+      .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-header {
+        font-size: 1.375rem; }
+        .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-header h2.summary {
+          display: block; }
 .portfolio-wrapper > .nav-spacer {
   background: rgba(255, 0, 0, 0.8);
   grid-area: spacer; }

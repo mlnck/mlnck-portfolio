@@ -1,20 +1,22 @@
 {% extends 'partials/base.html.twig' %}
 {% set collection = page.collection() %}
 {% block content %}
-    {% for module in collection %}
-      {% if module.slug == '_timeline' %}
-        <aside class="timeline-settings">
+  {% for module in collection %}
+    {% if module.slug == '_timeline' %}
+      <aside class="timeline-settings">
+        {{ module.content }}
+      </aside>
+    {% elseif module.slug == '_focused' %}
+    {{dump('~~MODULE::START~~')}}
+    {{dump(module)}}
+    {{dump('~~MODULE::END~~')}}
+      <main class="content-wrapper">
+        <article class="article">
           {{ module.content }}
-        </aside>
-      {% elseif module.slug == '_focused' %}
-        <main class="content-wrapper">
-          <article class="article">
-            {{ module.content }}
-          </article>
-        </main>
-      {% endif %}
-      {{dump(module)}}
-    {% endfor %}
+        </article>
+      </main>
+    {% endif %}
+  {% endfor %}
 {% endblock %}
 
 {% block collapsedNav %}

@@ -8,3 +8,14 @@
 
   &.-active{ border:5px solid $black; }
 }
+
+.gradient
+{
+  background: $black; /* Old browsers */
+  // background: -moz-linear-gradient(left, $black 0%, $purple 40%, $purple 50%, $purple 62%, $black 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left, $black 0%,$purple 40%,$purple 50%,$purple 62%,$black 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to right, $black 0%,$purple 40%,$purple 50%,$purple 62%,$black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$black', endColorstr='$black',GradientType=1 ); /* IE6-9 */
+  height:rems(1);
+  width:100%;
+}
