@@ -17,6 +17,8 @@ a
   font-size:rems(14);
 }
 
+em,i{ font-style: italic; }
+
 @import './fleck';
 @import './timeline';
 @import './content';

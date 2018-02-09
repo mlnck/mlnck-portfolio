@@ -26,9 +26,9 @@ And (in a nutshell) that is the driving force behind this rebrand. Need to see a
 Good question. And the main reason is:
 <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`user.needs = money`
 
-Until now, anytime I had a choice between doing a project that would benefit me in the long run, and doing a project that was relatively static (as far as career growth is concerned) I would choose the static project. I needed money, the family needed money, hell, who _doesn't_ need money!? (And if you find that person please tell them to reach out to me ... I have a ***_wonderful_*** business proposition for them)!
+Until now, anytime I had a choice between doing a project that would benefit me in the long run, and doing a project that was relatively static (as far as career growth is concerned) I would choose the static project. I needed money, the family needed money, hell, who _doesn&rsquo;t_ need money!? (And if you find that person please tell them to reach out to me ... I have a **_wonderful_** business proposition for them)!
 
-(Getting back on track), with the introduction of sites/apps such as [Product Hunt](http://www.producthunt.com)  &amp; [Twich](http://www.twitch.tv) the decision to get paid workting for other people and getting paid working for myself is dwindling. I know it will not be a fast climb, but if I could achieve enough followers for Twitch to pay me to stream [at night]('/about') then I could justify working on the most up-to-date pieces of development, while hopefully giving an audience an entertaining block of accreude Knowledge.
+(Getting back on track), with the introduction of sites/apps such as [Product Hunt](http://www.producthunt.com)  &amp; [Twich](http://www.twitch.tv) the decision to get paid working for other people and getting paid working for myself is dwindling. I know it will not be a fast climb, but if I could achieve enough followers for Twitch to pay me to stream [at night]('/about') then I could justify working on the most up-to-date pieces of development, while hopefully giving an audience an entertaining block of accreude Knowledge.
 
 With all of that out of the way I present to you _mlnck.me_ / _mlnck.com_. Part Blog, part portfolio, part think tank, all fun!.
 Let's see how this plays out!

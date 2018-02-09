@@ -513,6 +513,9 @@ body, html {
 a {
   font-size: 0.875rem; }
 
+em, i {
+  font-style: italic; }
+
 .fleck {
   border: none;
   border-radius: 10px;
