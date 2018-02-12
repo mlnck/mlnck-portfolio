@@ -145,6 +145,7 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('media_directory', [$this, 'mediaDirFunc']),
             new \Twig_SimpleFunction('print_server', [$this,'printServerFnc']),
             new \Twig_SimpleFunction('focused_item', [$this,'focusedItemFnc']),
+            new \Twig_SimpleFunction('focused_slug', [$this,'focusedSlugFnc']),
         ];
     }
 
@@ -1098,6 +1099,12 @@ class TwigExtension extends \Twig_Extension
 
     public function printServerFnc()
     { print_r($_SERVER); }
+    public function focusedSlugFnc()
+    {
+      $rte = $_SERVER['REQUEST_URI'];
+      $rte = explode('/',$rte);
+      return $rte[count($rte)-1];
+    }
     public function focusedItemFnc()
     {
       $rte = $_SERVER['REQUEST_URI'];
