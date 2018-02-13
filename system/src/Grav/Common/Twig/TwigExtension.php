@@ -24,6 +24,8 @@ class TwigExtension extends \Twig_Extension
     protected $debugger;
     protected $config;
 
+    protected $focusedAmt;
+
     /**
      * TwigExtension constructor.
      */
@@ -32,6 +34,8 @@ class TwigExtension extends \Twig_Extension
         $this->grav     = Grav::instance();
         $this->debugger = isset($this->grav['debugger']) ? $this->grav['debugger'] : null;
         $this->config   = $this->grav['config'];
+
+        $this->focusedAmt = isset($this->grav['focusedAmt']) ? $this->grav['focusedAmt'] : 0;
     }
 
     /**
@@ -101,6 +105,7 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('basename', 'basename'),
             new \Twig_SimpleFilter('dirname', 'dirname'),
             new \Twig_SimpleFilter('print_r', 'print_r'),
+            new \Twig_SimpleFilter('end_arr_key', [$this, 'endArrayKeyFltr']),
         ];
     }
 
@@ -146,6 +151,7 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('print_server', [$this,'printServerFnc']),
             new \Twig_SimpleFunction('focused_item', [$this,'focusedItemFnc']),
             new \Twig_SimpleFunction('focused_slug', [$this,'focusedSlugFnc']),
+            new \Twig_SimpleFunction('focused_item_amt', [$this,'focusedItemAmtFnc']),
         ];
     }
 
@@ -1093,8 +1099,12 @@ class TwigExtension extends \Twig_Extension
      * @param $var
      */
     public function vardumpFunc($var)
+    { var_dump($var); }
+
+    public function endArrayKeyFltr()
     {
-        var_dump($var);
+      $args = func_get_args();
+      return end(array_keys($args[0]));
     }
 
     public function printServerFnc()
@@ -1110,6 +1120,16 @@ class TwigExtension extends \Twig_Extension
       $rte = $_SERVER['REQUEST_URI'];
       $rte = explode('/',$rte);
       return ('/home/_focused/'.$rte[count($rte)-1]);
+    }
+
+    public function focusedItemAmtFnc()
+    {
+      $args = func_get_args();
+
+      if(is_numeric($args[0]))
+      { $this->focusedAmt += $args[0]; }
+      else
+      { return $this->focusedAmt; }
     }
 
 }
