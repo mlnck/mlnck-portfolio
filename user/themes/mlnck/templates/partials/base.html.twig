@@ -52,7 +52,7 @@
   <div class="portfolio-content">
     {% block content %}{% endblock %}
     {% if focused_item_amt('get') > 0%}
-      <div class="mobilespacer" style="height:{{focused_item_amt('get')*80+20}}px">&nbsp;</div>
+      <div class="mobilespacer" style="height:{{focused_item_amt('get')*88+40}}px">&nbsp;{{focused_item_amt('get')}}</div>
     {% endif %}
   </div>
   <div class="navspacer">
