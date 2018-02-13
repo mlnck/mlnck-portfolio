@@ -18,7 +18,7 @@ h2 > p
 {
   @extend .michroma;
   font-size: rems(14);
-  letter-spacing: 0;
+  letter-spacing: rems(1);
   line-height: rems($base-height-size*2.5);
   margin-bottom: rems($base-height-size*2);
   text-align:right;

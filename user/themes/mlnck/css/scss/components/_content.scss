@@ -3,9 +3,12 @@
 
 .portfolio-wrapper
 {
+  // height:96%;//turn to auto on media query
+  // overflow:scroll;//turn to auto on media query
   > .portfolio-content
   {
     grid-area: content;
+    // height:100%;//turn to auto on media query
 
     > .content-wrapper
     {
@@ -37,6 +40,7 @@
   > .nav-spacer
   {
     background:rgba(255,0,0,.8);
+    display:none;
     grid-area: spacer;
   }
 }

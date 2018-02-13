@@ -1,4 +1,4 @@
-<div class="timeline-wrapper">
+<div class="timeline-wrapper -unfocused">
   {{dump('~~TIMELINE::START~~')}}
   {% set blog_focused = false %}
   {% for p in page.collection|sort|reverse %}
@@ -8,12 +8,14 @@
         <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}}"></div>
         <div class="link {{ (strlen(p.title) > 15) ? '-long' : '' }}">
             <span class="linkdate">{{p.date|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
-            FOCUSED:::::: {{blog_focused}}
             {{dump(p)}}
         </div>
       </div>
     </a>
     {% if p.slug == focused_slug() %}
+      {% if blog_focused == false %}
+    </div><div class="timeline-wrapper -focused">
+      {% endif %}
       {% set blog_focused = true %}
     {% endif %}
     {% endif %}

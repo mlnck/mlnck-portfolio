@@ -29,4 +29,13 @@
       }
     }
   }
+  &.-focused
+  {
+    background-color:$bg-green;
+    bottom:rems(40);
+    position:absolute;
+    width:100%;
+
+    &:nth-child(even) > .timeline-link{ background-color:$bg-green-light }
+  }
 }
