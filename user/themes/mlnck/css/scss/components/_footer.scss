@@ -1,9 +1,27 @@
-footer {
+footer
+{
   background:$black;
   bottom:0;
   height:rems(40);
   position:absolute;
   width:100%;
+
+  .footer-filters
+  {
+    color:$white;
+    float:left;
+    line-height:rems(40);
+    margin-left:20px;//for testing to move away from debugger
+
+    .filters{ display:none; }
+    &:hover
+    {
+      color:green;
+
+      .filters{ display:block; }
+    }
+  }
+
   ul { float:right;
     li { float:left; margin:10px;
       a { color:$white; }

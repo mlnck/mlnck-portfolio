@@ -593,6 +593,17 @@ footer {
   height: 2.5rem;
   position: absolute;
   width: 100%; }
+  footer .footer-filters {
+    color: #efefef;
+    float: left;
+    line-height: 2.5rem;
+    margin-left: 20px; }
+    footer .footer-filters .filters {
+      display: none; }
+    footer .footer-filters:hover {
+      color: green; }
+      footer .footer-filters:hover .filters {
+        display: block; }
   footer ul {
     float: right; }
     footer ul li {
