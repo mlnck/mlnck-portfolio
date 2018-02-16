@@ -3,12 +3,9 @@
 
 .portfolio-wrapper
 {
-  // height:96%;//turn to auto on media query
-  // overflow:scroll;//turn to auto on media query
   > .portfolio-content
   {
     grid-area: content;
-    // height:100%;//turn to auto on media query
 
     > .content-wrapper
     {
@@ -39,8 +36,18 @@
   }
   > .navspacer
   {
-    background:rgba(255,0,0,.8);
-    display:none;
+    background:$bg-green-light;
+    bottom:rems(40);
     grid-area: spacer;
+    position:absolute;
+    width:100%;
+    z-index:10;
+
+    .category-filter
+    {
+      padding:rems(10) rems(25);
+
+      .fleck{ margin-right:rems(10); vertical-align:middle; }
+    }
   }
 }

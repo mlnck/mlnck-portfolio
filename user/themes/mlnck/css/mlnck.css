@@ -583,9 +583,17 @@ em, i {
         .portfolio-wrapper > .portfolio-content > .content-wrapper > article > .blog-header h2.summary {
           display: block; }
 .portfolio-wrapper > .navspacer {
-  background: rgba(255, 0, 0, 0.8);
-  display: none;
-  grid-area: spacer; }
+  background: #86bac0;
+  bottom: 2.5rem;
+  grid-area: spacer;
+  position: absolute;
+  width: 100%;
+  z-index: 10; }
+  .portfolio-wrapper > .navspacer .category-filter {
+    padding: 0.625rem 1.5625rem; }
+    .portfolio-wrapper > .navspacer .category-filter .fleck {
+      margin-right: 0.625rem;
+      vertical-align: middle; }
 
 footer {
   background: #222;
