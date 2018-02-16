@@ -12,7 +12,7 @@
   {% for p in filtered_collection %}
     <a href="/focus/{{p.slug}}">
       <div class="timeline-link">
-        <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}}"></div>
+        <div class="fleck -{{strtolower(p.header.taxonomy.category[0])}}{% if p.slug == focused_slug() %} -active{% endif %}"></div>
         <div class="link {{ (strlen(p.title) > 15) ? '-long' : '' }}">
             <span class="linkdate">{{p.date|date('Y.m.d')}}</span> &bull; <span class="linktitle">{{ p.title }}</span>
             {{dump(p)}}
