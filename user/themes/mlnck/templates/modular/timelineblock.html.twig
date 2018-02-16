@@ -21,20 +21,20 @@
     </a>
 
     {% if p.slug == focused_slug() %}
-
-      {% if blog_focused == false %}
-        {% if p.id != filtered_collection[filtered_collection|end_arr_key].id %}{# make sure it is not the final item #}
-          </div><div class="timeline-wrapper -focused">
-          {{ focused_item_amt(1) }}
-          {% set blog_focused = true %}
-        {% else %}
-          {{ focused_item_amt(-1) }}
-        {% endif %}
-      {% else %}
-        {{ focused_item_amt(1) }}
+      {% if p.id != filtered_collection[filtered_collection|end_arr_key].id %}{# make sure it is not the final item #}
+        </div><div class="timeline-wrapper -focused">
+        {{ focused_item_amt(-1) }}
+        {% set blog_focused = true %}
       {% endif %}
-
     {% endif %}
+
+    {% if blog_focused == true %}
+      {{ focused_item_amt(1) }}
+    {% endif %}
+
+
+
+
   {% endfor %}
   {{dump('~~TIMELINE::END~~')}}
 </div>
