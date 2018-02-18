@@ -533,6 +533,19 @@ em, i {
   height: 0.0625rem;
   width: 100%; }
 
+.svg-icon {
+  width: 1em;
+  height: 1em; }
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #222; }
+
+.svg-icon circle {
+  stroke: #222;
+  stroke-width: 1; }
+
 .timeline-wrapper > a {
   color: #efefef; }
   .timeline-wrapper > a:nth-child(even) > .timeline-link {
@@ -594,6 +607,8 @@ em, i {
     .portfolio-wrapper > .navspacer .category-filter .fleck {
       margin-right: 0.625rem;
       vertical-align: middle; }
+    .portfolio-wrapper > .navspacer .category-filter :hover {
+      background-color: #6ca0b0; }
 
 footer {
   background: #222;
@@ -606,12 +621,6 @@ footer {
     float: left;
     line-height: 2.5rem;
     margin-left: 20px; }
-    footer .footer-filters .filters {
-      display: none; }
-    footer .footer-filters:hover {
-      color: green; }
-      footer .footer-filters:hover .filters {
-        display: block; }
   footer ul {
     float: right; }
     footer ul li {

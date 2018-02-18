@@ -46,8 +46,9 @@
     .category-filter
     {
       padding:rems(10) rems(25);
-
       .fleck{ margin-right:rems(10); vertical-align:middle; }
+
+      :hover{ background-color: $bg-green; }
     }
   }
 }

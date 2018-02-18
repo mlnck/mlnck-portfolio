@@ -32,6 +32,19 @@
     			  background: -webkit-linear-gradient(left, #222 0%,{{v}} 40%,{{v}} 50%,{{v}} 62%,#222 100%); /* Chrome10-25,Safari5.1-6 */
     			  background: linear-gradient(to right, #222 0%,{{v}} 40%,{{v}} 50%,{{v}} 62%,#222 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     			}
+          {% if k == 'Tags' %}
+            {# overwrite css for svg tag icon #}
+            .fleck.-{{ strtolower(k) }}
+            {
+              background:transparent;
+
+              border-radius:0;
+              color:{{ strtolower(v) }};
+              fill:{{ strtolower(v) }};
+              path:{{ strtolower(v) }};
+              stroke:1px
+            }
+          {% endif %}
         {% endfor %}
       </style>
     {% endblock %}

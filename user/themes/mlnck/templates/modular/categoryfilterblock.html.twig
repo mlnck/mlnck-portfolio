@@ -1,8 +1,13 @@
 <div class="category-filters">
 {% for k,v in site.categoryfilters %}
   <div class="category-filter">
-    <div class="fleck -{{ strtolower(k) }} -{{ strtolower(k) }}"></div>
+    {% if(k == 'Tags') %}
+      {{ site.svgtagicon }}
+    {% else %}
+      <div class="fleck -{{ strtolower(k) }} -{{ strtolower(k) }}"></div>
+    {% endif %}
     <span class="filter">{{ strtolower(k) }}</span>
   </div>
 {% endfor %}
+
 </div>
