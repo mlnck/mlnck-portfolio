@@ -1,0 +1,33 @@
+.category-filters
+{
+  bottom:rems(-40);
+  position:relative;
+
+  > .category-filter
+  {
+    display:none;
+    position:relative;
+
+    &[data-category="tags"]
+    {
+      display:inline-block;
+      opacity:.85;
+
+      span{ display:none; }
+      svg{ display:inline-block; }
+    }
+  }
+  &:hover
+  {
+    background-color:$bg-green-light;
+
+    > .category-filter
+    {
+      display:block;
+      span{ display:inline; }
+      svg{ display:inline-block; }
+    }
+
+    .filters{ display:block; }
+  }
+}

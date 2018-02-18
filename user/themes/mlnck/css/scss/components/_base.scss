@@ -8,7 +8,6 @@ body,html
 {
   background-color:$bg-green;
   font-size:rems($base-font-size);
-  // height:100%;
   position:relative;
 }
 
@@ -20,6 +19,7 @@ a
 
 em,i{ font-style: italic; }
 
+@import './categoryfilters';
 @import './fleck';
 @import './timeline';
 @import './content';
