@@ -541,7 +541,10 @@ em, i {
       .category-filters:hover > .category-filter svg {
         display: inline-block; }
     .category-filters:hover ~ .catfilter-close {
-      display: red; }
+      color: #efefef;
+      display: block; }
+      .category-filters:hover ~ .catfilter-close:hover {
+        color: #222; }
     .category-filters:hover .filters {
       display: block; }
 
@@ -550,10 +553,10 @@ em, i {
   border: 0;
   border-radius: 3px;
   color: #efefef;
+  display: none;
   float: right;
-  margin-top: -100px;
+  margin-top: -315px;
   padding-bottom: 13px;
-  margin-right: -9;
   padding-top: 7px; }
 
 .fleck {

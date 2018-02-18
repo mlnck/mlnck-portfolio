@@ -1,5 +1,4 @@
 <div class="category-filters">
-<button class="catfilter-close">X</button>
 {% for k,v in site.categoryfilters %}
   <div class="category-filter" data-category="{{strtolower(k)}}">
     {% if(k == 'Tags') %}
@@ -11,3 +10,4 @@
   </div>
 {% endfor %}
 </div>
+<button class="catfilter-close">X</button>

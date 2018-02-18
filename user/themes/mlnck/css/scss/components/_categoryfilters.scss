@@ -35,7 +35,12 @@
       svg{ display:inline-block; }
     }
 
-    ~ .catfilter-close{ display:red; }
+    ~ .catfilter-close
+    {
+      color:$white;
+      display:block;
+      &:hover{ color:$black; }
+    }
 
     .filters{ display:block; }
   }
@@ -47,10 +52,9 @@
   border:0;
   border-radius:3px;
   color:$white;
-  // display:none;
+  display:none;
   float:right;
-  margin-top:-100px;
+  margin-top:-315px;
   padding-bottom: 13px;
-  margin-right:-9;
   padding-top: 7px;
 }
