@@ -5,6 +5,8 @@
 
   > .category-filter
   {
+    @extend .michroma;
+    color:$white;
     display:none;
     position:relative;
 
