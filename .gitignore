@@ -26,6 +26,8 @@ user/plugins/*
 !user/plugins/.*
 user/themes/antimatter/*
 !user/themes/antimatter*/.*
+user/themes/mlnck/css/*.css
+user/themes/mlnck/css/*.css*
 user/localhost/config/security.yaml
 user/config/security.yaml
 

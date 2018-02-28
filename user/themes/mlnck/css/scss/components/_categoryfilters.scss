@@ -15,8 +15,15 @@
       display:inline-block;
       opacity:.85;
 
-      span{ display:none; }
       svg{ display:inline-block; }
+    }
+
+    a
+    {
+      @extend .michroma;
+      color:$white;
+      display:none;
+      &:hover{ color:$black; }
     }
   }
   &:hover
@@ -26,10 +33,30 @@
     > .category-filter
     {
       display:block;
-      span{ display:inline; }
+      a{ display:inline; }
       svg{ display:inline-block; }
+    }
+
+    ~ .catfilter-close
+    {
+      color:$white;
+      display:block;
+      &:hover{ color:$black; }
     }
 
     .filters{ display:block; }
   }
+}
+
+.catfilter-close
+{
+  background-color:$bg-green-light;
+  border:0;
+  border-radius:3px;
+  color:$white;
+  display:none;
+  float:right;
+  margin-top:-315px;
+  padding-bottom: 13px;
+  padding-top: 7px;
 }

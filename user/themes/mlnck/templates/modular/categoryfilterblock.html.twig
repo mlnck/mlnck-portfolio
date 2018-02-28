@@ -6,8 +6,8 @@
     {% else %}
       <div class="fleck -{{ strtolower(k) }} -{{ strtolower(k) }}"></div>
     {% endif %}
-    <span class="filter">{{ strtolower(k) }}</span>
+    <a class="filter">{{ strtolower(k) }}</a>
   </div>
 {% endfor %}
-
 </div>
+<button class="catfilter-close">X</button>
