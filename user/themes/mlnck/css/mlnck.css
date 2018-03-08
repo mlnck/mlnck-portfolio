@@ -447,11 +447,7 @@ template {
 .debug {
   background-color: rgba(255, 0, 0, 0.3) !important; }
 
-<<<<<<< HEAD
-.michroma, h1, h2 > p, a, .category-filters > .category-filter {
-=======
-.michroma, h1, h2 > p, a, .category-filters > .category-filter a {
->>>>>>> 4395509ab11038a4dc2b7a521baed2f805a2781b
+.michroma, h1, h2 > p, a, .category-filters > .category-filter, .category-filters > .category-filter a {
   font-family: "Michroma", sans-serif;
   font-weight: 400; }
 
@@ -505,13 +501,16 @@ p {
 ._semi {
   font-weight: 600 !important; }
 
+:root {
+  --base-font-size: rems($base-font-size); }
+
 * {
   box-sizing: border-box;
   text-decoration: none; }
 
 body, html {
   background-color: #6ca0b0;
-  font-size: 1rem;
+  font-size: var(--base-font-size);
   position: relative; }
 
 a {

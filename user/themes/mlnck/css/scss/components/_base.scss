@@ -1,3 +1,7 @@
+:root {
+  --base-font-size: rems($base-font-size);
+}
+
 *
 {
   box-sizing:border-box;
@@ -7,7 +11,7 @@
 body,html
 {
   background-color:$bg-green;
-  font-size:rems($base-font-size);
+  font-size:var(--base-font-size);
   position:relative;
 }
 
