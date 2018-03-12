@@ -540,8 +540,11 @@ em, i {
     background-color: #86bac0; }
     .category-filters:hover > .category-filter {
       display: block; }
-      .category-filters:hover > .category-filter a {
+      .category-filters:hover > .category-filter a, .category-filters:hover > .category-filter svg {
         display: inline; }
+        .category-filters:hover > .category-filter a:hover, .category-filters:hover > .category-filter svg:hover {
+          background-color: transparent;
+          cursor: pointer; }
       .category-filters:hover > .category-filter svg {
         display: inline-block; }
     .category-filters:hover ~ .catfilter-close {
@@ -678,5 +681,26 @@ footer {
     grid-template-areas: "content spacer"; }
     .portfolio-wrapper > .portfolio-content {
       display: flex; } }
+@media screen and (min-width: 767px) {
+  .category-filters {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: unset;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 0.625rem;
+    position: absolute;
+    top: -0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) "top"; }
+    .category-filters > .category-filter {
+      display: block; }
+    .category-filters:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      right: 1.875rem;
+      top: 1.5625rem; }
+
+  .portfolio-wrapper > .navspacer {
+    position: static; } }
 
 /*# sourceMappingURL=mlnck.css.map */

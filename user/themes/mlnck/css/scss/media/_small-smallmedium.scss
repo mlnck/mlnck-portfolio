@@ -1,3 +1,24 @@
 @media screen and (min-width: $break-small) {
-  //
+  .category-filters
+  {
+    background-color:rgba(255,255,255,.2);
+    bottom:unset;
+    border:1px solid rgba(0,0,0,.5);
+    padding-top:rems(10);
+    position:absolute;
+    top:rems(-10);
+
+    @include rounded(10);
+    @include trans('top');
+
+    > .category-filter { display:block }
+    &:hover
+    {
+      background-color:rgba(255,255,255,.4);
+      right:rems(30);
+      top:rems(25);
+    }
+  }
+
+  .portfolio-wrapper > .navspacer{ position:static; }
 }

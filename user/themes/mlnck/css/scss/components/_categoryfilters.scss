@@ -33,7 +33,16 @@
     > .category-filter
     {
       display:block;
-      a{ display:inline; }
+
+      a,svg
+      {
+        display:inline;
+        &:hover
+        {
+          background-color:transparent;
+          cursor:pointer;
+        }
+      }
       svg{ display:inline-block; }
     }
 

@@ -27,6 +27,11 @@ $base-height-size:8;
 $baseHeightSize:$base-height-size+px;
 $fleckDim: ($base-height-size*2.5);
 
+// Transitions
+$trans-dur: 0.35s;
+$smooth: cubic-bezier(0.4, 0, 0.2, 1);
+$sharp: cubic-bezier(0.7, 0, 0.3, 1);
+
 /*-----------------------END VARIABLES------------------------------*/
 
 
@@ -52,6 +57,16 @@ $fleckDim: ($base-height-size*2.5);
   -moz-border-radius: $r;
   border-radius: $r;
 }
+
+@mixin opacity($amt:1)
+{
+  $winAmt: $amt*10;
+  opacity: $amt;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$winAmt+")";
+}
+
+@mixin trans($prop, $duration:$trans-dur, $ease:$smooth)
+{ transition: $duration $ease $prop; }
 /*-------------------------END MIXINS-------------------------------*/
 
 
