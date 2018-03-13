@@ -11,7 +11,11 @@
     @include rounded(10);
     @include trans('top');
 
-    > .category-filter { display:block }
+    > .category-filter
+    {
+      display:block;
+      &:hover{ background-color:rgba(255,255,255,.4); }
+    }
     &:hover
     {
       background-color:rgba(255,255,255,.4);
